@@ -5,7 +5,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hopper's Odysseyss</title>
+  <title>Hopper's Odyssey</title>
   <link rel="stylesheet" href="styles.css">
   <style>
     html,
@@ -21,20 +21,11 @@
 <body>
   <div class="map-container">
     <img src="map.PNG" alt="Pirate Map" class="map-image">
-    <!-- Buttons will be generated dynamically -->
+    <button class="quest-button" data-quest="1">✕</button>
+    <button class="quest-button" data-quest="2">✕</button>
   </div>
 
-  <!-- Enhanced Popup -->
-  <div id="questPopup" class="popup">
-    <div class="popup-content">
-      <span class="close">&times;</span>
-      <h2 id="popupTitle"></h2>
-      <h3 id="popupRegion"></h3>
-      <p id="popupDescription"></p>
-      <div id="popupImage"></div>
-      <button id="acceptQuest">Accept Quest!</button>
-    </div>
-  </div>
+  <div id="questPopup" class="popup">...</div>
 
   <script src="quest.js"></script>
 </body>
