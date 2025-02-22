@@ -1,36 +1,82 @@
 /* styles.css */
-.map-container {
-  position: relative;
-  width: 100vw;
-  height: 100vh;
+body {
+  margin: 0;
+  padding: 0;
   overflow: hidden;
+  height: 100%;
+  background-color: #e8c07b;
+}
+.map-container {
+  margin: 0 auto;
+  position: relative;
+  width: 1400px;
+  overflow: auto;
+  
 }
 
 .map-image {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
+  display: block;
 }
 
 .quest-button {
   position: absolute;
-  transform: translate(-50%, -50%);
-  background-color: #ff0000;
-  color: white;
-  border: none;
-  border-radius: 50%;
-  width: 40px;
+  /* Target display size (adjust these values) */
+  width: 32px;
+  /* ~10% of original width */
   height: 40px;
-  font-size: 32px;
+  /* ~10% of original height */
+  
+
+  /* Image scaling */
+  background: url('193050.png') no-repeat center center;
+  background-size: contain;
+
+  /* Remove default button styling */
+  border: none;
+  padding: 0;
   cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  transition: transform 0.2s;
+
+  /* Maintain positioning */
+  position: absolute;
+  transform: translate(-50%, -50%);
 }
 
 .quest-button:hover {
   transform: translate(-50%, -50%) scale(1.2);
-  background-color: #cc0000;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+  min-width: 300px;
+  z-index: 1000;
+}
+
+.popup.active {
+  display: block;
+}
+
+.popup-content {
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  color: #ff0000;
 }
