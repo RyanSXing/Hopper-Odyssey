@@ -1,0 +1,69 @@
+#player {
+    position: absolute;
+    background-color: transparent;
+}
+
+#game-container {
+    background-image: url(map-background.png);
+}
+
+
+.quest-button {
+    /* Target display size (adjust these values) */
+    width: 32px;
+    /* ~10% of original width */
+    height: 40px;
+    /* ~10% of original height */
+  
+    /* Image scaling */
+    background: url('193050.png') no-repeat center center;
+    background-size: contain;
+  
+    /* Remove default button styling */
+    border: none;
+    padding: 0;
+    cursor: pointer;
+  
+    /* Maintain positioning */
+    position: absolute;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+  }
+  
+.quest-button:hover {
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+  
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    min-width: 300px;
+    z-index: 1000;
+  }
+  
+.popup.active {
+    display: block;
+  }
+  
+.popup-content {
+    position: relative;
+  }
+  
+.close-btn {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+.close-btn:hover {
+    color: #ff0000;
+  }
