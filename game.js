@@ -9,28 +9,39 @@ function updatePlayerPosition() {
 const questData = {
     na: {
         title: "North American Recipe",
-        text: "Solve the quadratic equation from the map: x² - 3x - 5 = 0. Find both roots!",
+        text: "A creamy, briny chowder packed with clams, potatoes, and smoky bacon, evoking the hidden treasures of sunken ships along the New England coast. Served in a bread bowl shaped like a pirate’s chest!",
+        img: "images/na_img.png",
         link: "/Continents/na.html"
     },
     sa: {
         title: "South American Recipe",
-        text: "Navigate to the hidden cave at coordinates 23°17′N 75°12′W using the stars."
+        text: "Flaky, golden empanadas stuffed with spiced beef, olives, and eggs, shaped like pirate hats.",
+        img: "images/sa_img.png",
+        link: "/Continents/sa.html"
     },
     afr: {
         title: "African Recipe",
-        text: "Navigate to the hidden cave at coordinates 23°17′N 75°12′W using the stars."
+        text: "A fragrant Moroccan-inspired stew with spiced lamb “cannonballs,” apricots, and olives, evoking the loot of Barbary pirates.",
+        img: "images/af_img.png",
+        link: "/Continents/afr.html"
     },
     eur: {
         title: "European Recipe",
-        text: "Navigate to the hidden cave at coordinates 23°17′N 75°12′W using the stars."
+        text: "A hearty, slow-cooked stew blending Caribbean rum with European root vegetables, inspired by the rum-loving pirates of the Spanish Main.",
+        img: "images/eu_img.png",
+        link: "/Continents/eur.html"
     },
     as: {
         title: "Asian Recipe",
-        text: "Navigate to the hidden cave at coordinates 23°17′N 75°12′W using the stars."
+        text: " A fiery wok-tossed noodle dish with shrimp, chili, and charred veggies—inspired by the ruthless pirates of the South China Sea.",
+        img: "images/as_img.png",
+        link: "/Continents/as.html"
     },
     aus: {
         title: "Australian Recipe",
-        text: "Navigate to the hidden cave at coordinates 23°17′N 75°12′W using the stars."
+        text: "Fresh fish steamed in banana leaves with coconut milk, lime, and chili—a taste of Polynesian pirate hideouts.        ",
+        img: "images/au_img.png",
+        link: "/Continents/aus.html"
     }
 
 };
@@ -54,6 +65,7 @@ document.querySelectorAll('.quest-button').forEach(button => {
             <div class="popup-content">
                 <span class="close-btn">&times;</span>
                 <h2>${quest.title}</h2>
+                <img src="${quest.img}">
                 <p>${quest.text}</p>
                 <a href="${quest.link}" class="popup-button">Go to Quest</a>
             </div>
