@@ -11,7 +11,7 @@ const questData = {
         title: "North American Recipe",
         text: "A creamy, briny chowder packed with clams, potatoes, and smoky bacon, evoking the hidden treasures of sunken ships along the New England coast. Served in a bread bowl shaped like a pirate’s chest!",
         img: "images/na_img.png",
-        link: "/Continents/na.html"
+        link: "Continents/na.html"
     },
     sa: {
         title: "South American Recipe",

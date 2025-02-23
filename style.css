@@ -7,7 +7,21 @@
   font-family: Treasure;
   src: url(/fonts/FantaisieArtistique.otf);
 }
-
+#titleOverlay {
+  position: fixed;
+  top: 20px;
+  /* adjust as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: 'Treasure', cursive;
+  font-size: 70px;
+  color: black;
+  /* pirate gold */
+  z-index: 10000;
+  /* ensures it overlays other content */
+  pointer-events: none;
+  /* so clicks pass through if needed */
+}
 #player {
     position: absolute;
     background-color: transparent;
