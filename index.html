@@ -8,6 +8,9 @@
     <title>Hoppers Odyssey</title>
 </head>
 <body>
+    <div class="title">
+        <h1>Hopper's Odyssey<h1>
+    </div>
     <div id="game-container">
         <!-- SVG Map -->
         <svg id="worldMap" width="1690" height="810" style="position:relative">
@@ -16,7 +19,7 @@
             
             <!-- Predefined Regions (hidden under fog) -->
             <path id="na-to-sa" class="region" d="M380,300 L470,500" />
-            <path id="sa-to-af" class="region" d="M470,500 L720,400" />
+            <path id="sa-to-af" class="region" d="M470,500 L720,400" />S
             <path id="af-to-eu" class="region" d="M720,400 L730,250" />
             <path id="eu-to-as" class="region" d="M730,250 L970,300" />
             <path id="as-to-aus" class="region" d="M970,300 L1122,550" />
@@ -38,7 +41,7 @@
         <button class="quest-button" data-quest="aus" style="left: 80%; top: 67%"></button> <!-- aus -->
 
         <div id="player">
-            <img src="ship.png" width="70px">
+            <img src="ship.png" width="70px" draggable="false">
         </div>
     </div>
     <div id="questPopup" class="popup">

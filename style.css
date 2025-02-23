@@ -8,6 +8,26 @@
   src: url(/fonts/FantaisieArtistique.otf);
 }
 
+.title{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  left: 750px;
+  z-index: 4;
+  padding-top: 100px;
+  font-family: Treasure;
+  font-size: 25px;
+  width: 1400px;
+}
+
+.title h1{
+  position:absolute;
+  background-position: center;
+  top: 40px;
+  
+}
+
 #player {
     position: absolute;
     background-color: transparent;
